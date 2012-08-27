@@ -19,8 +19,9 @@
 #    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 ##############################################################################
+
 {
-    'name': 'GNU Health: Ophtalmoogy',  
+    'name': 'GNU Health: Ophtalmoogy',
     'version': '1.0.0',
     'author': 'ICTEC SAC',
     'email': 'webmaster@ictec.biz',
@@ -30,7 +31,7 @@
     ],
     'name_es_ES': 'GNU Health : Oftalmologia',
     'translation': ['locale/es_ES.po', 'locale/fr_FR.po', 'locale/el.po',
-        'locale/fa.po','locale/it.po'],
+        'locale/fa.po', 'locale/it.po'],
 
     'description': '''
 
@@ -49,7 +50,7 @@ Este módulo incluye :
 ''',
 
     'xml': [
-        'health_ophtalmo_view.xml','security/access_rights.xml'
+        'health_ophtalmo_view.xml', 'security/access_rights.xml'
     ],
     'active': False,
 }

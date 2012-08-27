@@ -19,14 +19,14 @@
 #
 ##############################################################################
 from trytond.model import ModelView, ModelSQL, fields
-from trytond.pyson import Eval, Not, Bool
-from datetime import datetime
-from trytond.pool import Pool
+#from trytond.pyson import Eval, Not, Bool
+#from datetime import datetime
+#from trytond.pool import Pool
 
 
 class GnuHealthPatient(ModelSQL, ModelView):
-    'Add to the Medical patient_data class (gnuhealth.patient) the ' \
-    'ophtalmologic fields.'
+    """Add to the Medical patient_data class (gnuhealth.patient)
+        the ophtalmologic fields."""
     _name = 'gnuhealth.patient'
     _description = __doc__
 
@@ -37,11 +37,11 @@ class GnuHealthPatient(ModelSQL, ModelView):
     refraction_subjective_cylinder_left = fields.Float("Cyl L")
     refraction_subjective_cylinder_right = fields.Float("Cyl R")
     refraction_subjective_axis_left = fields.Integer("Axis L")
-    refraction_subjective_axis_right = fields.Integer("Axis R")    
-    refraction_subjective_av_left = fields.Integer("AV L")    
-    refraction_subjective_av_right = fields.Integer("AV R")    
-    refraction_subjective_dnp_left = fields.Integer("DNP L")    
-    refraction_subjective_dnp_right = fields.Integer("DNP R")    
+    refraction_subjective_axis_right = fields.Integer("Axis R")
+    refraction_subjective_av_left = fields.Integer("AV L")
+    refraction_subjective_av_right = fields.Integer("AV R")
+    refraction_subjective_dnp_left = fields.Integer("DNP L")
+    refraction_subjective_dnp_right = fields.Integer("DNP R")
     bicromatic_left = fields.Boolean("Bicromatic L")
     bicromatic_right = fields.Boolean("Bicromatic R")
     maximum_positive_power_left = fields.Boolean("MPAV L")
@@ -114,4 +114,3 @@ class GnuHealthPatient(ModelSQL, ModelView):
     recommendations_ophtalmology = fields.Text("Recomendaciones")
 
 GnuHealthPatient()
-
